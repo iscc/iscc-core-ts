@@ -4,19 +4,19 @@ import {
     text_encodeUTF8,
     text_remove_newlines,
     text_trim
-} from './content-normalization';
+} from './content-normalization.js';
 
 import { blake3 } from 'hash-wasm';
 
-import { encode_component } from './codec';
+import { encode_component } from './codec.js';
 import {
     b64DecodeUnicode,
     chunkString,
     interleave,
     isJson,
     sliding_window
-} from './utils';
-import { alg_simhash } from './simhash';
+} from './utils.js';
+import { alg_simhash } from './simhash.js';
 import {
     METACODE_BITS,
     META_NGRAM_SIZE_BYTES,
@@ -27,7 +27,7 @@ import {
     MT,
     Version,
     ST
-} from './constants';
+} from './constants.js';
 
 /**
  * Generates a Meta-Code from content metadata.
@@ -119,8 +119,8 @@ export async function gen_meta_code_v0(
     descriptionResult = text_clean(descriptionResult);
     descriptionResult = text_trim(descriptionResult, META_TRIM_DESCRIPTION);
 
-    let meta_code_digest = undefined;
-    let metahash = undefined;
+    let meta_code_digest: string;
+    let metahash: string;
     let metadata_value = undefined;
     if (meta) {
         // CLN-007: Validate meta input size to prevent resource exhaustion
@@ -235,7 +235,7 @@ export async function soft_hash_meta_v0(
     if (extra === undefined || (extra !== undefined && extra.length === 0)) {
         return simhash_digest;
     } else {
-        let extra_hash_digests = undefined;
+        let extra_hash_digests: string[];
         if (descJsonFormat) {
             //# Raw bytes are handled per byte
             const extra_n_grams = sliding_window(extra, META_NGRAM_SIZE_BYTES);

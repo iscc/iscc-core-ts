@@ -2,7 +2,7 @@ import {
     gen_audio_code,
     gen_audio_code_v0,
     soft_hash_audio_v0
-} from './code-content-audio';
+} from './code-content-audio.js';
 
 export const CHROMA_VECTOR: number[] = [
     684003877, 683946551, 1749295639, 2017796679, 2026256086, 2022066918,

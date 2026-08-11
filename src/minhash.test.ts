@@ -1,4 +1,4 @@
-import { algMinhash, algMinhashCompress, algMinhash64 } from './minhash';
+import { algMinhash, algMinhashCompress, algMinhash64 } from './minhash.js';
 
 export const MAXI64 = (1n << 64n) - 1n;
 export const MPRIME = (1n << 61n) - 1n;

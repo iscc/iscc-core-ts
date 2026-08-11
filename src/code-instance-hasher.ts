@@ -1,7 +1,7 @@
 import { IHasher } from 'hash-wasm/dist/lib/WASMInterface';
 import { createBLAKE3 } from 'hash-wasm';
-import { encode_component } from './codec';
-import { MT, ST, Version } from './constants';
+import { encode_component } from './codec.js';
+import { MT, ST, Version } from './constants.js';
 
 /**
  * Handles the hashing of data streams for ISCC Instance-Code generation.

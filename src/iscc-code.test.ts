@@ -1,5 +1,5 @@
-import { iscc_explain } from './codec';
-import { gen_iscc_code, gen_iscc_code_v0 } from './iscc-code';
+import { iscc_explain } from './codec.js';
+import { gen_iscc_code, gen_iscc_code_v0 } from './iscc-code.js';
 const MID_64 = 'AAAYPXW445FTYNJ3';
 const CID_64 = 'EAARMJLTQCUWAND2';
 const DID_128 = 'GABVVC5DMJJGYKZ4ZBYVNYABFFYXG';

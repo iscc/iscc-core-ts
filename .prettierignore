@@ -4,3 +4,5 @@ lib
 .husky
 node_modules
 target
+# Generated conformance vectors - one long line by design.
+src/data.ts

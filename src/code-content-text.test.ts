@@ -1,5 +1,5 @@
-import { gen_text_code, soft_hash_text_v0 } from './code-content-text';
-import { text_collapse } from './content-normalization';
+import { gen_text_code, soft_hash_text_v0 } from './code-content-text.js';
+import { text_collapse } from './content-normalization.js';
 const TEXT_A = `
     Their most significant and usefull property of similarity-preserving
     fingerprints gets lost in the fragmentation of individual, propietary and

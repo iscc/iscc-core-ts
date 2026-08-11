@@ -5,9 +5,8 @@ import {
     decode_base32,
     decode_header,
     iscc_decompose,
-    iscc_decode,
-} from './codec';
-import { MT, Version } from './constants';
+} from './codec.js';
+import { MT, Version } from './constants.js';
 
 export function sliding_window(seq: string, width: number) {
     if (width < 2) {

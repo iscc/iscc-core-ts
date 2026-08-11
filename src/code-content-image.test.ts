@@ -3,7 +3,7 @@ import {
     gen_image_code_v0,
     soft_hash_image_v0,
     algDct
-} from './code-content-image';
+} from './code-content-image.js';
 
 export const IMG_WHITE_PIXELS: number[] = Array(1024).fill(255);
 export const IMG_BLACK_PIXELS: number[] = Array(1024).fill(0);

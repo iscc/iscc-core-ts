@@ -1,4 +1,4 @@
-import { gen_meta_code } from './metacode';
+import { gen_meta_code } from './metacode.js';
 
 test('test_gen_meta_code_name_only', async () => {
     const result = await gen_meta_code('Hello  World');

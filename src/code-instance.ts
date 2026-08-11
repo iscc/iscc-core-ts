@@ -1,5 +1,5 @@
-import { INSTANCE_BITS } from './constants';
-import { InstanceHasherV0 } from './code-instance-hasher';
+import { INSTANCE_BITS } from './constants.js';
+import { InstanceHasherV0 } from './code-instance-hasher.js';
 
 /**
  * Generates an ISCC Instance-Code from a data stream.

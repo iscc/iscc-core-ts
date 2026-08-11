@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.1.0](https://github.com/iscc/iscc-core-ts/releases/tag/v1.1.0) - 2026-08-11
+
+### Packaging
+
+- **Real ESM output.** The `lib/esm` build previously emitted extensionless relative imports
+  (`export * from './options'`) with no `"type": "module"` marker, so Node could not load it —
+  ESM consumers silently fell back to the CommonJS build via `main`. Source imports now carry
+  explicit `.js` extensions and the build writes a scoped `package.json` into each output
+  directory, so `lib/esm` is genuinely loadable as ESM.
+- **Added an `exports` map** with per-format `types`, so `import` resolves to `lib/esm` and
+  `require` resolves to `lib/cjs`. Existing deep imports remain available via the `./lib/*`
+  subpath, so this is not a breaking change for current consumers.
+- **Replaced `src/data.json` with `src/data.ts`.** A JSON import cannot be emitted for both the
+  CJS and ESM targets from one source without import attributes; holding the conformance vectors
+  in a TypeScript module removes the dependency on `resolveJsonModule`.
+- Type declarations are now resolvable under the `node16`, `nodenext`, `bundler`, and `node`
+  module-resolution modes.
+
+### Tooling
+
+- Cleared all 14 outstanding ESLint errors (unused imports, redundant initialisers, a missing
+  error `cause`) and added `lint` and `typecheck` gates to both CI workflows.
+- Migrated the deprecated `.eslintignore` file to the flat-config `ignores` field.
+
+## [v1.0.1](https://github.com/iscc/iscc-core-ts/releases/tag/v1.0.1) - 2026-08-11
+
+Publishing and packaging metadata release. No functional changes to the library.
+
+- Releases are now published to npm from GitHub Actions using
+  [trusted publishing](https://docs.npmjs.com/trusted-publishers/) (OIDC), with no long-lived
+  token, and carry a build provenance attestation.
+- Corrected the `repository`, `bugs`, and `homepage` URLs, which pointed at the former
+  personal repository.
+- Added the missing `types` field, so TypeScript consumers resolve the bundled declarations.
+- Excluded `*.tsbuildinfo` incremental-build caches from the published tarball.
+
 ## [v1.0.0](https://github.com/branciard/iscc-core-ts/releases/tag/v1.0.0) - 2026-02-25
 
 Iteration 4 — Dev starter kit and 1.0 release.

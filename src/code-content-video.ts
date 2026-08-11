@@ -1,6 +1,6 @@
-import { encode_component } from './codec';
-import { MT, ST_CC, VIDEO_BITS, Version } from './constants';
-import { safeHex } from './utils';
+import { encode_component } from './codec.js';
+import { MT, ST_CC, VIDEO_BITS, Version } from './constants.js';
+import { safeHex } from './utils.js';
 
 /**
  * 

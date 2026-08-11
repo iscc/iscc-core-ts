@@ -8,8 +8,8 @@
  * and is compatible with UUID.
  */
 import * as crypto from 'crypto';
-import { encode_component, toHexString } from './codec';
-import { MT, ST, FLAKE_BITS, Version } from './constants';
+import { encode_component, toHexString } from './codec.js';
+import { MT, ST, FLAKE_BITS, Version } from './constants.js';
 
 /** Module-level counter state for ensuring uniqueness within same millisecond */
 const _COUNTER = new Map<string, bigint>();

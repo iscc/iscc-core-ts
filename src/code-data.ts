@@ -1,7 +1,7 @@
-import { encode_component } from './codec';
-import { MT, ST, DATA_BITS, Version } from './constants';
-import { algCdcChunks } from './cdc';
-import { algMinhash256 } from './minhash';
+import { encode_component } from './codec.js';
+import { MT, ST, DATA_BITS, Version } from './constants.js';
+import { algCdcChunks } from './cdc.js';
+import { algMinhash256 } from './minhash.js';
 import { xxHash32 } from 'js-xxhash';
 
 /**

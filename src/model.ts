@@ -1,6 +1,5 @@
-import { decode_header, encode_header, decode_units, encode_base32, decode_base32, encode_base32hex, decode_length } from './codec';
-import { MT, ST, ST_CC, ST_ISCC, Version, ST_ID, SubType, SUBTYPE_MAP } from './constants';
-import { b64EncodeUnicode } from './utils';
+import { decode_header, encode_header, decode_units, encode_base32, decode_base32, encode_base32hex, decode_length } from './codec.js';
+import { MT, Version, SubType, SUBTYPE_MAP } from './constants.js';
 
 /**
  * Convenience class to handle different representations of an ISCC

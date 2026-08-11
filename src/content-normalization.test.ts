@@ -1,4 +1,4 @@
-import { text_trim, text_collapse, text_clean } from './content-normalization';
+import { text_trim, text_collapse, text_clean } from './content-normalization.js';
 
 test('Test trim OK', () => {
     const result = text_trim(' hello world ');

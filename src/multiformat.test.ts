@@ -1,4 +1,4 @@
-import { iscc_clean, iscc_decode, iscc_decompose } from './codec';
+import { iscc_clean, iscc_decode, iscc_decompose } from './codec.js';
 
 describe('multiformat', () => {
     // Test constants

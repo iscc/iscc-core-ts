@@ -1,13 +1,13 @@
 import XRegExp from 'xregexp';
-import { gen_meta_code } from './metacode';
-import { gen_text_code } from './code-content-text';
-import { gen_image_code } from './code-content-image';
-import { gen_audio_code } from './code-content-audio';
-import { gen_video_code } from './code-content-video';
-import { gen_mixed_code } from './code-content-mixed';
-import { gen_data_code } from './code-data';
-import { gen_instance_code } from './code-instance';
-import { gen_iscc_code } from './iscc-code';
+import { gen_meta_code } from './metacode.js';
+import { gen_text_code } from './code-content-text.js';
+import { gen_image_code } from './code-content-image.js';
+import { gen_audio_code } from './code-content-audio.js';
+import { gen_video_code } from './code-content-video.js';
+import { gen_mixed_code } from './code-content-mixed.js';
+import { gen_data_code } from './code-data.js';
+import { gen_instance_code } from './code-instance.js';
+import { gen_iscc_code } from './iscc-code.js';
 
 test('gen_meta_code_v0_test_0001_title_only', async () => {
     const result = await gen_meta_code('Die Unendliche Geschichte');

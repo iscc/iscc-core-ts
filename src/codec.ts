@@ -1,6 +1,6 @@
 import { base32, base64url, base32hex } from 'rfc4648';
 import bs58 from 'bs58';
-import { binaryArrayToUint8Array, rtrim } from './utils';
+import { binaryArrayToUint8Array, rtrim } from './utils.js';
 import {
     CANONICAL_REGEX,
     MT,
@@ -10,12 +10,11 @@ import {
     ST,
     ST_ISCC,
     SUBTYPE_MAP,
-    ST_CC,
     UNITS,
     Version,
     SubType,
-} from './constants';
-import { gen_iscc_code_v0 } from './iscc-code';
+} from './constants.js';
+import { gen_iscc_code_v0 } from './iscc-code.js';
 
 /**
  * Converts a Uint8Array to a hexadecimal string.
@@ -485,7 +484,9 @@ export function iscc_validate(iscc: string, strict = true): boolean {
         decode_base32(iscc.split(':')[1]);
     } catch (e) {
         if (strict) {
-            throw new Error(e instanceof Error ? e.message : String(e));
+            throw new Error(e instanceof Error ? e.message : String(e), {
+                cause: e
+            });
         }
         return false;
     }

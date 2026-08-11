@@ -9,7 +9,7 @@
 
 import XRegExp from 'xregexp';
 
-import { LINE_ENDING_REGEX } from './constants';
+import { LINE_ENDING_REGEX } from './constants.js';
 
 /**
  * Trims and normalizes text according to ISCC specification.

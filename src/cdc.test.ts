@@ -1,4 +1,4 @@
-import { algCdcParams, algCdcChunks } from './cdc';
+import { algCdcParams, algCdcChunks } from './cdc.js';
 import { blake3 } from 'hash-wasm';
 
 export function staticBytes(

@@ -17,9 +17,9 @@ import {
     iscc_clean,
     iscc_decompose,
     iscc_decode,
-} from './codec';
-import { MT, ST, Version } from './constants';
-import { alg_simhash } from './simhash';
+} from './codec.js';
+import { MT, Version } from './constants.js';
+import { alg_simhash } from './simhash.js';
 
 /**
  * Encode a non-negative integer as a unsigned varint (Protocol Buffers format).

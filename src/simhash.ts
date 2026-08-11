@@ -1,4 +1,4 @@
-import { safeHex } from './utils';
+import { safeHex } from './utils.js';
 
 /**
  * Convert a hex string to a Uint8Array without Buffer dependency.

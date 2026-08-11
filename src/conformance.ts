@@ -20,7 +20,7 @@
  * implementation testing.
  */
 
-import testData from './data.json';
+import testData from './data.js';
 
 export interface ConformanceTestEntry {
     test_name: string;

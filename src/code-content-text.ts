@@ -3,13 +3,13 @@
  * @module code-content-text
  */
 
-import { TEXT_NGRAM_SIZE } from './constants';
-import { text_collapse } from './content-normalization';
-import { safeHex, sliding_window } from './utils';
-import { algMinhash256 } from './minhash';
+import { TEXT_NGRAM_SIZE } from './constants.js';
+import { text_collapse } from './content-normalization.js';
+import { safeHex, sliding_window } from './utils.js';
+import { algMinhash256 } from './minhash.js';
 import { xxHash32 } from 'js-xxhash';
-import { encode_component } from './codec';
-import { MT, ST_CC, TEXT_BITS, Version } from './constants';
+import { encode_component } from './codec.js';
+import { MT, ST_CC, TEXT_BITS, Version } from './constants.js';
 
 /**
  * Generates an ISCC Content-Code from text input.

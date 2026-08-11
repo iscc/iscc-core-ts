@@ -6,8 +6,8 @@ import {
     encode_units,
     encode_base32,
     encode_header_to_uint8Array
-} from './codec';
-import { MT, ST, ST_ISCC, Version, IsccTuple } from './constants';
+} from './codec.js';
+import { MT, ST_ISCC, Version, IsccTuple } from './constants.js';
 
 /**
  * Combine multiple ISCC-UNITs to a composite ISCC-CODE with a common header.

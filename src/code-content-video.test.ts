@@ -2,7 +2,7 @@ import {
     gen_video_code,
     gen_video_code_v0,
     soft_hash_video_v0
-} from './code-content-video';
+} from './code-content-video.js';
 
 test('test_hash_video_v0_features', () => {
     const input = Array(380).fill(0);

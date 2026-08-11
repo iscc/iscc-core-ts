@@ -1,4 +1,4 @@
-import { CDC_GEAR_UINT32, DATA_AVG_CHUNK_SIZE, IO_READ_SIZE } from './constants';
+import { CDC_GEAR_UINT32, DATA_AVG_CHUNK_SIZE, IO_READ_SIZE } from './constants.js';
 
 /**
  * A generator that yields data-dependent chunks for the input data.

@@ -1,4 +1,4 @@
-import { core_opts } from './options';
+import { core_opts } from './options.js';
 
 /**
  * Default bit lengths for various ISCC code components.

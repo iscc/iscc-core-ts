@@ -19,10 +19,10 @@ import {
     encode_base58,
     decode_base58,
     iscc_validate_mf
-} from './codec';
-import { MT } from './constants';
-import { gen_meta_code } from './metacode';
-import { Code } from './model';
+} from './codec.js';
+import { MT } from './constants.js';
+import { gen_meta_code } from './metacode.js';
+import { Code } from './model.js';
 
 test('test_main_type', () => {
     expect(typeof MT.META).toBe('number');

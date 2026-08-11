@@ -3,8 +3,8 @@ import {
     soft_hash_data_v0,
     gen_data_code_v0,
     gen_data_code
-} from './code-data';
-import { DataHasherV0 } from './code-data';
+} from './code-data.js';
+import { DataHasherV0 } from './code-data.js';
 
 export function staticBytes(
     n: number = 1024 * 1024,

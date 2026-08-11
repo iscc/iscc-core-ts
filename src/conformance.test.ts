@@ -5,16 +5,16 @@
  * Kept alongside data.test.ts (hand-written) for double-check coverage.
  */
 
-import { conformance_testdata, ConformanceTestEntry } from './conformance';
-import { gen_meta_code } from './metacode';
-import { gen_text_code } from './code-content-text';
-import { gen_image_code } from './code-content-image';
-import { gen_audio_code } from './code-content-audio';
-import { gen_video_code } from './code-content-video';
-import { gen_mixed_code } from './code-content-mixed';
-import { gen_data_code } from './code-data';
-import { gen_instance_code } from './code-instance';
-import { gen_iscc_code } from './iscc-code';
+import { conformance_testdata, ConformanceTestEntry } from './conformance.js';
+import { gen_meta_code } from './metacode.js';
+import { gen_text_code } from './code-content-text.js';
+import { gen_image_code } from './code-content-image.js';
+import { gen_audio_code } from './code-content-audio.js';
+import { gen_video_code } from './code-content-video.js';
+import { gen_mixed_code } from './code-content-mixed.js';
+import { gen_data_code } from './code-data.js';
+import { gen_instance_code } from './code-instance.js';
+import { gen_iscc_code } from './iscc-code.js';
 
 // Map function names from data.json to actual callable functions.
 // Each dispatcher receives the pre-converted inputs array and returns

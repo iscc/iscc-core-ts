@@ -1,4 +1,4 @@
-import { hash_instance_v0, gen_instance_code_v0 } from './code-instance';
+import { hash_instance_v0, gen_instance_code_v0 } from './code-instance.js';
 
 describe('Instance Code Tests', () => {
     test('hash_instance_v0_empty', async () => {

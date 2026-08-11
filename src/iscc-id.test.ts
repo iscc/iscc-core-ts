@@ -3,9 +3,8 @@ import {
     gen_iscc_id_v0,
     gen_iscc_id_v1,
     iscc_id_incr,
-    iscc_id_incr_v0,
     alg_simhash_from_iscc_id,
-} from './iscc-id';
+} from './iscc-id.js';
 
 describe('gen_iscc_id_v1', () => {
     test('generates ISCC-IDv1 with specific timestamp and hub_id 0', () => {

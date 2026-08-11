@@ -4,10 +4,10 @@ import {
     decode_header,
     decode_length,
     iscc_clean
-} from './codec';
+} from './codec.js';
 
-import { MT, ST_CC, MIXED_BITS, Version } from './constants';
-import { alg_simhash } from './simhash';
+import { MT, ST_CC, MIXED_BITS, Version } from './constants.js';
+import { alg_simhash } from './simhash.js';
 
 /**
  * Generates an ISCC Mixed Code from multiple ISCC Content Codes.

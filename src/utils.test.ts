@@ -1,4 +1,4 @@
-import { binaryArrayToUint8Array, sliding_window } from './utils';
+import { binaryArrayToUint8Array, sliding_window } from './utils.js';
 
 test('test_gen_meta_code_sliding_window', () => {
     const result = sliding_window('abcdef', 3);

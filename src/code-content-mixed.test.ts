@@ -1,6 +1,6 @@
-import { gen_text_code_v0 } from './code-content-text';
-import { gen_mixed_code, gen_mixed_code_v0 } from './code-content-mixed';
-import { gen_meta_code_v0 } from './metacode';
+import { gen_text_code_v0 } from './code-content-text.js';
+import { gen_mixed_code, gen_mixed_code_v0 } from './code-content-mixed.js';
+import { gen_meta_code_v0 } from './metacode.js';
 
 test('test_gen_mixed_code_v0_single_raises', () => {
     const tc = gen_text_code_v0('Hello World', 64);
