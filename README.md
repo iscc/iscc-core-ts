@@ -1,8 +1,14 @@
 # iscc-core-ts
 
 [![Tests](https://github.com/iscc/iscc-core-ts/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/iscc/iscc-core-ts/actions/workflows/tests.yml)
+[![npm](https://img.shields.io/npm/v/iscc-core-ts)](https://www.npmjs.com/package/iscc-core-ts)
 
 TypeScript implementation of [iscc-core python reference](https://github.com/iscc/iscc-core)
+
+> **This repository is the official home of `iscc-core-ts`.**
+> Development previously took place at [`branciard/iscc-core-ts`](https://github.com/branciard/iscc-core-ts), which is now archived and read-only.
+> Please open issues and pull requests here. Releases from v1.0.1 onward are published to npm from this repository
+> with [build provenance](https://docs.npmjs.com/generating-provenance-statements).
 
 # Project summary
 
