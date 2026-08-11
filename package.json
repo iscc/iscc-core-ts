@@ -4,6 +4,7 @@
   "description": "Iscc core TypeScript implementation of iscc-core reference",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
+  "types": "./lib/cjs/index.d.ts",
   "unpkg": "./lib/esm/index",
   "scripts": {
     "build": "tsc -b && tsc -p tsconfig-cjs.json",
@@ -20,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/branciard/iscc-core-ts.git"
+    "url": "git+https://github.com/iscc/iscc-core-ts.git"
   },
   "keywords": [
     "ISCC",
@@ -29,9 +30,9 @@
   "author": "francois branciard",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/branciard/iscc-core-ts/issues"
+    "url": "https://github.com/iscc/iscc-core-ts/issues"
   },
-  "homepage": "https://github.com/branciard/iscc-core-ts#readme",
+  "homepage": "https://github.com/iscc/iscc-core-ts#readme",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/jest": "^30.0.0",

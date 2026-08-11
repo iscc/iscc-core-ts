@@ -1,0 +1,34 @@
+# Publishes to npm when a version tag is pushed.
+#
+# Authentication uses npm Trusted Publishing (OIDC) — there is no NPM_TOKEN
+# secret. The trusted publisher must be configured once on npmjs.com under the
+# package settings, pointing at this repository and this workflow filename.
+#
+# Provenance attestations are generated automatically by npm when publishing
+# this way from a public repository.
+
+name: Publish
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # required for OIDC
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+      # Trusted publishing requires npm >= 11.5.1; Node 22 ships npm 10.x.
+      - run: npm install -g npm@latest
+      - run: npm ci
+      - run: npm run fulltest
+      - run: npm run build
+      - run: npm publish
