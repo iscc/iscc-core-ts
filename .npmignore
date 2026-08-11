@@ -9,3 +9,6 @@
 
 # The following line further removes all test files (which matches .js and .d.ts).
 lib/**/*.test.*
+
+# Incremental-build caches are not part of the published package.
+lib/**/*.tsbuildinfo
